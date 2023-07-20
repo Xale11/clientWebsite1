@@ -289,7 +289,7 @@
     align-items: center;
     width: 50vw;
     background-color:rgba(0, 0, 0, 0.75);
-    background-image: url(./img/professional.png);
+    background-image: url(./img/profImg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -308,7 +308,7 @@
     background-color:rgba(0, 0, 0, 0.75);
     transition: all 700ms ease-in-out;
     z-index: 5;
-    background-image: url(./img/instagram.png);
+    background-image: url(./img/instaImg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -319,7 +319,7 @@
     width: 80vw;
     background-color:rgba(0, 0, 0, 0.15);
     filter: grayscale(0%);
-    background-position: unset;
+    background-position: center;
 }
 
 .professional:hover .instagram{
@@ -330,7 +330,7 @@
     width: 80vw;
     background-color:rgba(0, 0, 0, 0.15);
     filter: grayscale(0%);
-    background-position: unset;
+    background-position: center;
 }
 
 .instagram:hover .professional{
