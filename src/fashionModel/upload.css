@@ -1,0 +1,139 @@
+.upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--lightGray);
+}
+
+.close{
+    cursor: pointer;
+    
+}
+
+.uploadTitle{
+    background-color: var(--darkGray2);
+    font-size: 3em;
+    border-radius: 1em;
+    padding: 0em 1em;
+    margin-top: 0.4em;
+}
+
+.editText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.textTitle{
+    background-color: var(--darkGray2);
+    font-size: 2em;
+    border-radius: 1em;
+    padding: 0em 1em;
+    margin-top: 0.4em;
+}
+
+.textEdit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.photoManager{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em; 
+}
+
+.photoManagerTitle{
+    background-color: var(--darkGray2);
+    font-size: 2em;
+    border-radius: 1em;
+    padding: 0em 1em;
+    margin: 0.4em;
+}
+
+.pickFolder{
+    background-color: var(--darkGray2);
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em; 
+}
+
+.folderOption{
+    background-color: brown;
+    padding: 0em 1em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.folderOption:hover{
+    padding: 0.5em 1.5em;
+}
+
+.picked{
+    background-color: yellow;
+}
+
+.display{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.profImgs{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em; 
+}
+
+.instaImgs{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em; 
+}
+
+.imgFile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgFile img{
+    max-height: 25vw;
+}
+
+.textSubmit{
+    background-color: var(--darkGray2);
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.textSubmit:hover{
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}

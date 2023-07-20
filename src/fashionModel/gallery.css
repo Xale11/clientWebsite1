@@ -1,0 +1,47 @@
+.galleryPage{
+    background: linear-gradient(to right, var(--lightGray) 15%, var(--darkGray) 30%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.galleryHeader{
+    height: 8em;
+}
+
+.galleryTitle{
+    font-family:var(--fontMain), Courier, monospace;
+    color: white;
+    font-size: 1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    overflow-x: hidden;
+}
+
+.container img{
+    border-radius: 1em;
+    max-width: 30vw;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.container img:hover{
+    box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+@media screen and (max-height: 540px){
+    .galleryHeader{
+        height: 17em;
+    }
+}

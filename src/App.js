@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React, {useRef, useState} from 'react'
 import './App.css';
+import Fm1 from './fashionModel/fm1';
+import Gallery from './fashionModel/gallery';
+import Upload from './fashionModel/upload';
+import {Routes, Route} from "react-router-dom"
+import {Helmet} from "react-helmet";
+
 
 function App() {
+
+  const home = useRef(null)
+  const portfolio = useRef(null)
+  const about = useRef(null)
+  const contact = useRef(null)
+
+  const [toHome, setToHome] = useState(false)
+  const [toPortfolio, setToPortfolio] = useState(false)
+  const [toAbout, setToAbout] = useState(false)
+  const [toContact, setToContact] = useState(false)
+  const [isDropdown, setIsDropdown] = useState(false)
+  const [showDropdown, setShowDropdown] = useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Daniel Pindura</title>
+                <meta name="description" content="Portfolio website for a model" />
+      </Helmet>
+      <Routes>
+        <Route path='/' element={<Fm1 isDropdown={isDropdown} setIsDropdown={setIsDropdown} home={home} portfolio={portfolio} about={about} contact={contact} setToHome={setToHome} setToPortfolio={setToPortfolio} setToAbout={setToAbout} setToContact={setToContact} toHome={toHome} toPortfolio={toPortfolio} toAbout={toAbout} toContact={toContact}/>}/>
+        <Route path="/upload" element={<Upload/>}/>
+        <Route path="/gallery/:id" element={<Gallery isDropdown={isDropdown} setIsDropdown={setIsDropdown} home={home} portfolio={portfolio} about={about} contact={contact} setToHome={setToHome} setToPortfolio={setToPortfolio} setToAbout={setToAbout} setToContact={setToContact} toHome={toHome} toPortfolio={toPortfolio} toAbout={toAbout} toContact={toContact}/>}/>
+      </Routes>
     </div>
   );
 }
