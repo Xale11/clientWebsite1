@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Ysabeau SC";
+  src: url(./fonts/YsabeauSC-VariableFont_wght.ttf);
+  font-style: normal;
+  
+}
 :root{
   --fontMain: Ysabeau SC;
   --darkGray: #353B39;
