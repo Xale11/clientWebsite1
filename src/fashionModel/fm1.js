@@ -1,6 +1,6 @@
 import React, {useRef, useState, useEffect} from 'react'
 import "./fm1.css"
-import modelImg from "./img/model.png"
+import modelImg from "./img/background1.png"
 import collageImg from "./img/photoCollage.png"
 import headshotImg from "./img/headshot.png"
 import { Link } from 'react-router-dom'
