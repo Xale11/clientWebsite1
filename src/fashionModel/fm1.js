@@ -6,7 +6,7 @@ import headshotImg from "./img/headshot.png"
 import { Link } from 'react-router-dom'
 import {collection, doc, getDoc} from "firebase/firestore"
 import { db } from './firebaseConfig/firebase'
-import {BsFacebook, BsInstagram, BsTiktok, BsChevronDown} from "react-icons/bs"
+import {BsFacebook, BsInstagram, BsTiktok, BsChevronDown, BsPinterest} from "react-icons/bs"
 import {HiOutlineMail, HiMenu} from "react-icons/hi"
 
 
@@ -126,16 +126,16 @@ const Fm1 = ({isDropdown, setIsDropdown, home, portfolio, about, contact, setToA
             <div className="bodyBtn" onClick={scrollToContact}>Contact Me</div>
           </div>
           <div className="socialMedias">
-            <div className="socialIcons darkGray2" onClick={() => {window.open("http://google.com", "_blank")}}>
-                <BsFacebook/>
+            <div className="socialIcons darkGray2" onClick={() => {window.open("https://www.pinterest.co.uk/danielpindura/", "_blank")}}>
+                <BsPinterest/>
             </div>
-            <div className="socialIcons darkGray2" onClick={() => {window.open("http://google.com", "_blank")}}>
+            <div className="socialIcons darkGray2" onClick={() => {window.open("https://www.tiktok.com/@shackz23", "_blank")}}>
                 <BsTiktok/>
             </div>
             <div className="socialIcons" onClick={scrollToContact}>
                 <HiOutlineMail/>
             </div>
-            <div className="socialIcons" onClick={() => {window.open("http://google.com", "_blank")}}>
+            <div className="socialIcons" onClick={() => {window.open("https://www.instagram.com/shack.zz/", "_blank")}}>
                 <BsInstagram/>
             </div>
           </div>
